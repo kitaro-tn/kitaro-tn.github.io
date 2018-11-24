@@ -9,18 +9,26 @@
     <meta name="keyword" content="SE,PG,Freelance">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/bulma-timeline/dist/css/bulma-timeline.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style type="text/css">
+      body {
+        background: hsl(0, 0%, 14%);
+        color: hsl(0, 0%, 98%);
+      }
+      a.navbar-item:hover {
+        background-color: hsl(0, 0%, 71%);
+      }
+      .has-bg-img { background: url('http://www.nkr-solutions.website/images/pc_background.jpg')center center; background-size:cover; }
+    </style>
   </head>
   <body>
 
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-fullheight has-bg-img ">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-              </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroB">
                 <span></span>
                 <span></span>
@@ -29,19 +37,19 @@
             </div>
             <div id="navbarMenuHeroB" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item" href="#about-me-section">
-                  About me
+                <a class="navbar-item has-text-white-ter" href="#profile-section">
+                  Profile
                 </a>
-                <a class="navbar-item" href="#production-section">
+                <a class="navbar-item has-text-white-ter" href="#production-section">
                   Production
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item has-text-white-ter" href="#career-section">
                   Career
                 </a>
-                <a class="navbar-item" href="http://carefree-se.hatenablog.com/" target="_blank">
+                <a class="navbar-item has-text-white-ter" href="http://carefree-se.hatenablog.com/" target="_blank">
                   Blog
                 </a>
-                <a class="navbar-item" href="https://speakerdeck.com/tatsunori_nishikori" target="_blank">
+                <a class="navbar-item has-text-white-ter" href="https://speakerdeck.com/tatsunori_nishikori" target="_blank">
                   Slides
                 </a>
               </div>
@@ -51,13 +59,16 @@
       </div>
 
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
-          Title
-          </p>
-          <p class="subtitle">
-          Subtitle
-          </p>
+        <div class="container has-text-grey-light is-size-7">
+          <div class="columns">
+            <div class="column is-3 is-offset-9">
+              <p>
+              スタートアップ企業を経験し、バックエンドからフロントエンドまで、Webサービスを0ベースから立ち上げました。<br>
+              業界としてはECが最も経験としては多く、ついでアドネットワーク、ソーシャルゲームの経験があります。<br>
+              要件定義から、設計、開発、運用保守までカバーできます。
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -68,7 +79,7 @@
               <span class="icon has-text-info"><i class="fab fa-twitter-square fa-lg"></i></span>
             </a>
             <a href="https://github.com/kitaro-tn" title="Github" target="_blank">
-              <span class="icon has-text-grey"><i class="fab fa-github-square fa-lg"></i></span>
+              <span class="icon has-text-grey-lighter"><i class="fab fa-github-square fa-lg"></i></span>
             </a>
             <a href="https://www.facebook.com/tatsunori.nishikori" title="Facebook" target="_blank">
               <span class="icon has-text-link"><i class="fab fa-facebook-square fa-lg"></i></span>
@@ -76,18 +87,19 @@
           </div>
         </div>
       </div>
-
     </section>
 
-    <section id="about-me-section" class="section">
+    <section id="profile-section" class="section">
       <div class="container">
-        <h2 class="title has-text-centered">About me</h2>
+        <h2 class="title has-text-centered has-text-white-ter">Profile</h2>
         <div class="section">
-          <p>
-          スタートアップ企業を経験し、バックエンドからフロントエンドまで、Webサービスを0ベースから立ち上げました。<br>
-          業界としてはECが最も経験としては多く、ついでアドネットワーク、ソーシャルゲームの経験があります。<br>
-          要件定義から、設計、開発、運用保守までカバーできます。
-          </p>
+          <ul>
+            <li>Tatsunori Nishikori(@kitaro)</li>
+            <li>Rubyの聖地・島根出身</li>
+            <li>得意な言語 : Ruby, Python</li>
+            <li>好きなエディタ : Vim</li>
+            <li>好きなOS : Mac OS</li>
+          </ul>
         </div>
         <div class="section">
           <div class="tile is-ancestor">
@@ -159,7 +171,7 @@
 
     <section id="production-section" class="section">
       <div class="container">
-        <h2 class="title has-text-centered">Production</h2>
+        <h2 class="title has-text-centered has-text-white-ter">Production</h2>
         <div class="columns">
           <div class="column is-4">
             <div class="card">
@@ -276,7 +288,133 @@
 
     <section id="career-section" class="section">
       <div class="container">
-        <h2 class="title has-text-centered">Career</h2>
+        <h2 class="title has-text-centered has-text-white-ter">Career</h2>
+        <div class="timeline">
+          <header class="timeline-header">
+            <span class="tag is-medium is-info">Present</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">July 2018</p>
+              <p>ライブ動画配信のインフラを中心に担当。Amazon Media Serviceを利用しライブ配信のインフラを構築。細かい設定箇所で動画配信の業務知識を学ぶ機会が出来た。</p>
+            </div>
+          </div>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">April 2018</p>
+              <p>デザインリニューアルと並行し、古いシステムのリプレイスを行う。asyncに対応している<code>aiohttp</code>を利用し、非同期でレンダリングさせ、サイトの高速化に貢献。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2018</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">September 2017</p>
+              <p>Amazon EMR上で<code>Apache Spark</code>を利用し、ビッグデータからデータクレンジング、Spark MLを利用した強調フィルタリングでレコメンデーションを実現。</p>
+            </div>
+          </div>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-warning is-icon has-text-white is-small">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="timeline-content">
+              <p class="heading">April 2017</p>
+              <p>フリーランスとして、CChannelにJoin。実務でPythonをがっつりと開発で使用。</p>
+            </div>
+          </div>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">October 2017</p>
+              <p>Amazon Paymentを既存決済処理に導入。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2017</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">October 2016</p>
+              <p>Ruby1.9(Sinatora)、一部JavaのシステムをRuby 2.4系 + Rails5.0にリプレイス。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2016</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-warning is-icon has-text-white is-small">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="timeline-content">
+              <p class="heading">October 2015</p>
+              <p>netpriceにJoin。プロジェクト管理の見直しから、古くなったシステムの整理を行う。</p>
+            </div>
+          </div>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">April 2015</p>
+              <p>収集したアプリのデータを元に、分析レポートの抽出をPythonやApache Sparkを利用して行う。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2015</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">October 2014</p>
+              <p>アプリのランキングデータをクローリングして収集。Java/Rubyで実装。</p>
+            </div>
+          </div>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">March 2014</p>
+              <p><a href="https://spike.cc/" alt="spike">spike</a>のβ版開発に参加。UIをメインに担当。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2014</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">October 2013</p>
+              <p><a href="http://tokupo.jp/">Tokupo</a>の運用開発から、移行サポートまで担当。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2013</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-warning is-icon has-text-white is-small">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="timeline-content">
+              <p class="heading">March 2012</p>
+              <p>metapsにJoin。ソーシャルゲーム等の開発に関わり、Web系アプリ開発エンジニアとしてのキャリアを積み始める。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2012</span>
+          </header>
+          <div class="timeline-item is-info">
+            <div class="timeline-marker is-info"></div>
+            <div class="timeline-content">
+              <p class="heading">Since 2012</p>
+              <p>地元SI企業にて、主に電子カルテパッケージ導入に関わる。直接顧客との要件定義にも参加。</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-medium is-info">Past</span>
+          </header>
+        </div>
       </div>
     </section>
 
