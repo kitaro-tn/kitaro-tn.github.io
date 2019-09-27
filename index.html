@@ -75,10 +75,10 @@
       <div class="hero-foot">
         <div class="columns">
           <div class="column is-1 is-offset-11">
-            <a href="https://twitter.com/kitaro_tn" title="Twitter" target="_blank">
+            <a href="https://twitter.com/tatsu_nkr" title="Twitter" target="_blank">
               <span class="icon has-text-info"><i class="fab fa-twitter-square fa-lg"></i></span>
             </a>
-            <a href="https://github.com/kitaro-tn" title="Github" target="_blank">
+            <a href="https://github.com/tanish-kr" title="Github" target="_blank">
               <span class="icon has-text-grey-lighter"><i class="fab fa-github-square fa-lg"></i></span>
             </a>
             <a href="https://www.facebook.com/tatsunori.nishikori" title="Facebook" target="_blank">
@@ -430,5 +430,32 @@
       </div>
     </section>
 
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+
+      });
+    </script>
   </body>
 </html>
